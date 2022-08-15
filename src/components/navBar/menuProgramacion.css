@@ -1,0 +1,50 @@
+.accordion ul {
+    display: none;
+    margin-bottom: 0; 
+    color: #9c9d9d;
+}
+
+.accordion.open ul{
+    display: block;
+}
+
+.accordion.open .title .arrow-down{
+    transform: rotate(180deg) translate(0, -3px);
+}
+
+.accordion {
+    cursor: pointer;
+    width: auto;
+}
+
+.title {
+    display: flex;
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #393842;
+    gap: 8px;
+}
+
+.ulMenuProgramacion{
+   
+}
+
+.ulMenuProgramacion li{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    color: #393842;
+    margin-top: 1rem;
+}
+.puntoSubMenu{
+    height: 4px;
+    width: 4px;
+    background-color: #D55F60;
+    margin-right: 10px;
+}

@@ -1,0 +1,160 @@
+* 
+::before,
+::after{/*incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra.*/
+    box-sizing: border-box;
+}
+
+*{ /* reseteo CSS*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navHeader{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 16px ;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+
+.imgNav{
+    width: 76px;
+    height: 76px;   
+}
+
+.divBrandNav{
+    height: 76px;
+    width: 160px;
+    margin-right:45px;
+    margin-left: 8px;
+}
+
+.divBrandNav h1{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #393842;
+}
+
+.divPerfilMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.divPerfilMenu img{
+    margin-left: 26px;
+
+}
+
+.divPerfilMenu h4{
+    width: 160px;
+    height: 15px;
+    font-family: 'Fira Sans Extra Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #393842;
+    opacity: 0.7;
+}
+
+.menuOpen li{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+    color: #393842;
+}
+
+.nav__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    transform: translatey(-100%);
+    transition: 0.5s ease-in;    
+    padding-top: 120px;
+    
+}
+
+.divBuscarMenu{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0 26px;
+    border: none;
+}
+
+.divBuscarMenu input{
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #393842;
+    opacity: 0.7;
+    border: none;
+}
+
+.divBuscarMenu button{
+    border: none;
+}
+
+
+.nav__active {
+    transform: translateX(0%);
+}
+  
+/* Toggle Icon Animation */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 2px);
+    z-index: 3;
+    background:  rgba(57, 56, 66, 1);
+    width: 26px;
+}
+
+.toggle .line2 {
+    background:  rgba(57, 56, 66, 1);
+    opacity: 0;
+    z-index: 3;
+}
+
+.toggle .line3 {
+    background:  rgba(57, 56, 66, 1);
+    z-index: 3;
+    transform: rotate(45deg) translate(-6px, -5px);
+    width: 26px;
+}
+  
+
+.nav__toggler{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+}
+
+.nav__toggler div {
+    width: 22.5px;
+    height: 2.5px;
+    background:  rgba(57, 56, 66, 1);
+    transition: 0.3s ease-in;
+}
+
